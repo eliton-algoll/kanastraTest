@@ -1,1 +1,0 @@
-{"name":"John Doe 2","email":"johndoe2@kanastra.com.br","value":2000000,"dueDate":"2022-10-14T00:00:00.000Z","barCode":747540}
