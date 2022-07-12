@@ -12,13 +12,15 @@ describe('mailService test', () => {
             },
         }));
 
-        const mailToSend: Promise<ITicket> = new Promise((resolve, reject) => resolve({
-            name: "John Doe 2",
-            email: "johndoe2@kanastra.com.br",
-            value: 2000000,
-            dueDate: new Date("2022-10-14"),
-            barCode:747540
-        }));
+        const mailToSend: Promise<ITicket> = new Promise((resolve) => {
+            resolve({
+                name: "John Doe 2",
+                email: "johndoe2@kanastra.com.br",
+                value: 2000000,
+                dueDate: new Date("2022-10-14"),
+                barCode:747540
+            })
+        });
 
         const expectMail = await mailToSend.then(res => JSON.stringify(res));
 
