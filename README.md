@@ -37,3 +37,5 @@ Rotas:
 get http://localhost:333/upload
 post http://localhost:333/upload
 ```
+
+Adicionei alguns console.log`s em cada etapa para demonstrar o funcionamento asíncrono
